@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    /* Prevent flash of wrong theme */
+    (function(){
+      var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+      document.documentElement.setAttribute('data-theme',t);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shivam Adarsh — academic portfolio">
+  <meta name="keywords" content="academic, portfolio, research, machine learning, computer science">
+  <title>Shivam Adarsh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ═══════════ NAVIGATION ═══════════ -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-right">
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">about</a>
+        <a href="assets/pdf/cv_130126.pdf" target="_blank" rel="noopener">cv</a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <div class="page-header fade-in">
+    <h1>Shivam Adarsh</h1>
+  </div>
+
+  <div class="about-layout">
+
+    <!-- ── Profile column ── -->
+    <div class="profile-col fade-in">
+
+      <img src="assets/img/photo.jpg" alt="Shivam Adarsh" class="profile-photo">
+
+      <div class="social-links">
+        <a href="https://scholar.google.com/citations?user=xOpDJxcAAAAJ" title="Google Scholar" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M13.823,13.313c0-0.979,2.119-1.267,2.119-3.559c0-1.002-0.069-1.716-0.518-2.223c-0.035-0.035-0.058-0.058-0.092-0.081c-0.161-0.15-0.346-0.276-0.576-0.392c0-0.334,1.878-0.115,1.878-0.76c-0.323,0-4.112,0-4.112,0s-3.018,0.08-3.905,2.303c-0.092,0.196-0.15,0.403-0.196,0.622C8.375,9.465,8.34,9.73,8.34,10.007c0,3.571,3.651,3.168,3.651,3.168s0,0.541,0,0.91c0,0.369,0.484,0.242,0.541,0.991c-0.242,0-5.057-0.138-5.057,3.11c0,3.26,4.25,3.099,4.25,3.099s4.907,0.219,4.907-3.813C16.634,15.063,13.823,14.28,13.823,13.313z M10.264,10.202C10.091,9.5,10.114,8.82,10.31,8.279c0.058-0.219,0.15-0.415,0.265-0.576c0.207-0.311,0.484-0.518,0.829-0.61c0.38-0.092,0.772-0.035,1.14,0.173c0.207,0.104,0.403,0.253,0.576,0.438c0.357,0.357,0.657,0.875,0.818,1.486c0.38,1.451-0.115,2.845-1.14,3.11C11.784,12.587,10.655,11.642,10.264,10.202z M12.383,20.247c-1.693,0.115-3.156-0.806-3.237-2.062c-0.081-1.267,1.232-2.373,2.937-2.5c1.693-0.127,3.133,0.806,3.237,2.073C15.39,19.014,14.088,20.132,12.383,20.247z"/>
+            <path fill="currentColor" d="M20,4l-4.571,3.429h-2.286c-0.194-0.206-0.389-0.229-0.594-0.183c-0.366-0.206-0.754-0.263-1.131-0.171C11.074,7.166,10.8,7.371,10.594,7.68c-0.114,0.16-0.206,0.354-0.263,0.571C9.977,8.423,9,9,9,9H3l8-5H20z"/>
+            <line x1="18" y1="9" x2="18" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="18" y1="5" x2="18" y2="8" stroke="currentColor" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="https://github.com/shivam0109" title="GitHub" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56v-1.96c-3.2.7-3.87-1.54-3.87-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.19a11.04 11.04 0 015.76 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.7.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/shivam-adarsh-99870487/" title="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 11-.01-4.13 2.06 2.06 0 01.01 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://x.com/shivamadarsh99" title="X" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="mailto:shad@di.ku.dk" title="Email">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ── Bio column ── -->
+    <div class="bio-col fade-in">
+
+      <!-- About text loaded from content/about.txt -->
+      <div id="about-content"></div>
+
+      <h2 class="section-title">Publications</h2>
+
+      <ol class="pub-list">
+
+        <li class="pub-item fade-in">
+          <div><span class="pub-venue-badge">Preprint</span></div>
+          <div>
+            <div class="pub-title">How Context Shapes Truth: Geometric Transformations of Statement-level Truth Representations in LLMs</div>
+            <div class="pub-authors">
+              <span class="you">Shivam Adarsh</span>, Maria Maistro, and Christina Lioma
+            </div>
+            <div class="pub-meta">To appear in ACL 2026</div>
+            <div class="pub-links">
+              <button onclick="toggleEl(this,'abs')">Abs</button>
+              <a href="https://arxiv.org/abs/2601.06599" target="_blank" rel="noopener">arXiv</a>
+              <button onclick="toggleEl(this,'bib')">Bib</button>
+            </div>
+            <div class="pub-abstract">
+              Large Language Models (LLMs) often encode whether a statement is true as a vector in their residual stream activations. These vectors, also known as truth vectors, have been studied in prior work, however how they change when context is introduced remains unexplored. We study this question by measuring (1) the directional change (θ) between the truth vectors with and without context and (2) the relative magnitude of the truth vectors upon adding context. Across four LLMs and four datasets, we find that (1) truth vectors are roughly orthogonal in early layers, converge in middle layers, and may stabilize or continue increasing in later layers; (2) adding context generally increases the truth vector magnitude, i.e., the separation between true and false representations in the activation space is amplified; (3) larger models distinguish relevant from irrelevant context mainly through directional change (θ), while smaller models show this distinction through magnitude differences. We also find that context conflicting with parametric knowledge produces larger geometric changes than parametrically aligned context. To the best of our knowledge, this is the first work that provides a geometric characterization of how context transforms the truth vector in the activation space of LLMs.
+            </div>
+            <div class="pub-bibtex"><pre>@article{adarsh2026context,
+  author  = {Shivam Adarsh and Maria Maistro and Christina Lioma},
+  title   = {How Context Shapes Truth: Geometric Transformations of Statement-level Truth Representations in LLMs},
+  journal = {arXiv preprint arXiv:2601.06599},
+  year    = {2026},
+}</pre></div>
+          </div>
+        </li>
+
+        <li class="pub-item fade-in">
+          <div><span class="pub-venue-badge">ACL</span></div>
+          <div>
+            <div class="pub-title">SIKeD: Self-guided Iterative Knowledge Distillation for Mathematical Reasoning</div>
+            <div class="pub-authors">
+              <span class="you">Shivam Adarsh</span>*, Kumar Shridhar*, Caglar Gulcehre, Nicholas Monath, and Mrinmaya Sachan
+            </div>
+            <div class="pub-meta">In Findings of the Association for Computational Linguistics: ACL 2025, Vienna, Austria, 2025</div>
+            <div class="pub-links">
+              <button onclick="toggleEl(this,'abs')">Abs</button>
+              <a href="https://doi.org/10.18653/v1/2025.findings-acl.513" target="_blank" rel="noopener">DOI</a>
+              <button onclick="toggleEl(this,'bib')">Bib</button>
+            </div>
+            <div class="pub-abstract">
+              Large Language Models (LLMs) can transfer their reasoning skills to smaller models by teaching them to generate the intermediate reasoning process required to solve multistep reasoning tasks. While LLMs can accurately solve reasoning tasks through a variety of strategies, even without fine-tuning, smaller models are not expressive enough to fit the LLMs distribution on all strategies when distilled and tend to prioritize one strategy over the others. This reliance on one strategy poses a challenge for smaller models when attempting to solve reasoning tasks that may be difficult with their preferred strategy. To address this, we propose a distillation method SIKeD: Self-guided Iterative Knowledge Distillation, where the LLM teaches the smaller model to approach a task using different strategies and the smaller model uses its self-generated on-policy outputs to choose the most suitable strategy for the given task. The training continues in a self-guided iterative manner, where for each training iteration, a decision is made on how to combine the LLM data with the self-generated outputs. Unlike traditional distillation methods, SIKeD allows the smaller model to learn which strategy is suitable for a given task while continuously learning to solve a task using different strategies. Our experiments on various mathematical reasoning datasets show that SIKeD significantly outperforms traditional distillation techniques across smaller models of different sizes.
+            </div>
+            <div class="pub-bibtex"><pre>@inproceedings{adarsh-etal-2025-siked,
+  author    = {Shivam Adarsh and Kumar Shridhar and Caglar Gulcehre and Nicholas Monath and Mrinmaya Sachan},
+  title     = {SIKeD: Self-guided Iterative Knowledge Distillation for Mathematical Reasoning},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2025},
+  year      = {2025},
+  pages     = {9868--9880},
+  doi       = {10.18653/v1/2025.findings-acl.513},
+}</pre></div>
+          </div>
+        </li>
+
+        <li class="pub-item fade-in">
+          <div><span class="pub-venue-badge">JELS</span></div>
+          <div>
+            <div class="pub-title">Automating Abercrombie: Machine-learning Trademark Distinctiveness</div>
+            <div class="pub-authors">
+              <span class="you">Shivam Adarsh</span>, Elliott Ash, Stefan Bechtold, Barton Beebe, and Jeanne Fromer
+            </div>
+            <div class="pub-meta">Journal of Empirical Legal Studies 21 (4), 826–860, 2024</div>
+            <div class="pub-links">
+              <button onclick="toggleEl(this,'abs')">Abs</button>
+              <a href="https://doi.org/10.1111/jels.12398" target="_blank" rel="noopener">DOI</a>
+              <button onclick="toggleEl(this,'bib')">Bib</button>
+            </div>
+            <div class="pub-abstract">
+              Trademark law protects marks to enable firms to signal their products' qualities to consumers. To qualify for protection, a mark must be able to identify and distinguish goods. US courts typically locate a mark on a "spectrum of distinctiveness"—known as the Abercrombie spectrum—that categorizes marks as fanciful, arbitrary, or suggestive, and thus as "inherently distinctive," or as descriptive or generic, and thus as not inherently distinctive. This article explores whether locating trademarks on the Abercrombie spectrum can be automated using current natural-language processing techniques. Using about 1.5 million US trademark registrations between 2012 and 2019 as well as 2.2 million related USPTO office actions, the article presents a machine-learning model that learns semantic features of trademark applications and predicts whether a mark is inherently distinctive. Our model can predict trademark actions with 86% accuracy overall, and it can identify subsets of trademark applications where it is highly certain in its predictions of distinctiveness. Using an eXplainable AI (XAI) algorithm, we further analyze which features in trademark applications drive our model's predictions. We then explore the practical and normative implications of our approach. On a practical level, we outline a decision-support system that could, as a "robot trademark clerk," assist trademark experts in their determination of a trademark's distinctiveness. Such a system could also help trademark experts understand which features of a trademark application contribute the most toward a trademark's distinctiveness. On a theoretical level, we discuss the normative limits of the Abercrombie spectrum and propose to move beyond Abercrombie for trademarks whose distinctiveness is uncertain. We discuss how machine-learning projects in the law not only inform us about the aspects of the legal system that may be automated in the future, but also force us to tackle normative tradeoffs that may be invisible otherwise.
+            </div>
+            <div class="pub-bibtex"><pre>@article{adarsh2024abercrombie,
+  author  = {Shivam Adarsh and Elliott Ash and Stefan Bechtold and Barton Beebe and Jeanne Fromer},
+  title   = {Automating Abercrombie: Machine-learning Trademark Distinctiveness},
+  journal = {Journal of Empirical Legal Studies},
+  volume  = {21},
+  number  = {4},
+  pages   = {826--860},
+  year    = {2024},
+  doi     = {10.1111/jels.12398},
+}</pre></div>
+          </div>
+        </li>
+
+        <li class="pub-item fade-in">
+          <div><span class="pub-venue-badge">Sci Rep</span></div>
+          <div>
+            <div class="pub-title">Microgravity Induces Overconfidence in Perceptual Decision-making</div>
+            <div class="pub-authors">
+              Leyla Loued-Khenissi, Christian Pfeiffer, Rupal Saxena, <span class="you">Shivam Adarsh</span>, and Davide Scaramuzza
+            </div>
+            <div class="pub-meta">Scientific Reports 13, 9727, 2023</div>
+            <div class="pub-links">
+              <button onclick="toggleEl(this,'abs')">Abs</button>
+              <a href="https://doi.org/10.1038/s41598-023-36775-0" target="_blank" rel="noopener">DOI</a>
+              <button onclick="toggleEl(this,'bib')">Bib</button>
+            </div>
+            <div class="pub-abstract">
+              Does gravity affect decision-making? This question comes into sharp focus as plans for interplanetary human space missions solidify. In the framework of Bayesian brain theories, gravity encapsulates a strong prior, anchoring agents to a reference frame via the vestibular system, informing their decisions and possibly their integration of uncertainty. What happens when such a strong prior is altered? We address this question using a self-motion estimation task in a space analog environment under conditions of altered gravity. Two participants were cast as remote drone operators orbiting Mars in a virtual reality environment on board a parabolic flight, where both hyper- and microgravity conditions were induced. From a first-person perspective, participants viewed a drone exiting a cave and had to first predict a collision and then provide a confidence estimate of their response. We evoked uncertainty in the task by manipulating the motion's trajectory angle. Post-decision subjective confidence reports were negatively predicted by stimulus uncertainty, as expected. Uncertainty alone did not impact overt behavioral responses (performance, choice) differentially across gravity conditions. However microgravity predicted higher subjective confidence, especially in interaction with stimulus uncertainty. These results suggest that variables relating to uncertainty affect decision-making distinctly in microgravity, highlighting the possible need for automatized, compensatory mechanisms when considering human factors in space research.
+            </div>
+            <div class="pub-bibtex"><pre>@article{louedkhenissi2023microgravity,
+  author  = {Leyla Loued-Khenissi and Christian Pfeiffer and Rupal Saxena and Shivam Adarsh and Davide Scaramuzza},
+  title   = {Microgravity Induces Overconfidence in Perceptual Decision-making},
+  journal = {Scientific Reports},
+  volume  = {13},
+  pages   = {9727},
+  year    = {2023},
+  doi     = {10.1038/s41598-023-36775-0},
+}</pre></div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Last updated: June 2026.
+</footer>
+
+<script src="content/about.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
