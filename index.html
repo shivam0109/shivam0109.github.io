@@ -76,7 +76,9 @@
           <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </a>
         <a href="mailto:shad@di.ku.dk" title="Email">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
         </a>
       </div>
     </div>
@@ -90,6 +92,34 @@
       <h2 class="section-title">Publications</h2>
 
       <ol class="pub-list">
+
+        <li class="pub-item fade-in">
+          <div><span class="pub-venue-badge keep-case">Preprint</span></div>
+          <div>
+            <div class="pub-title">When Steering Shifts Discourse: Identifying and Intervening on Discourse-Level Changes due to Activation Steering in LLMs</div>
+            <div class="pub-authors">
+              <span class="you">Shivam Adarsh</span>, Hetianyu Huang, Lau Safin, Maria Maistro, and Christina Lioma
+            </div>
+            <div class="pub-meta">arxiv preprint 2026</div>
+            <div class="pub-links">
+              <button onclick="toggleEl(this,'abs')">Abs</button>
+              <a href="https://arxiv.org/pdf/2610.41661" target="_blank" rel="noopener">PDF</a>
+              <button onclick="toggleEl(this,'bib')">Bib</button>
+            </div>
+            <div class="pub-abstract">
+              Activation steering is an inference-time technique used to control or modify the behavior, tone, or safety properties of a large language model (LLM) without retraining the model's weights or editing its input prompt, but simply by adding a vector to its residual-stream activations. However, activation steering also changes the generated text in unintended ways, unrelated to intended behavior change, that are not well understood. Prior work has measured these changes only through coarse signals such as perplexity. In this work, we show that steering systematically produces significant changes in discourse dimensions of the generated text, such as its formality, use of evidence, and ambiguity. We present a way of countering this by adding a second, complementary vector that targets the affected discourse dimension. This intervention restores about 78% of the unintended discourse changes while preserving the intended steering behavior in about 93% of the generations.
+            </div>
+            <div class="pub-bibtex"><pre>@misc{adarsh2026steering,
+  author        = {Shivam Adarsh and Hetianyu Huang and Lau Safin and Maria Maistro and Christina Lioma},
+  title         = {When Steering Shifts Discourse: Identifying and Intervening on Discourse-Level Changes due to Activation Steering in {LLM}s},
+  year          = {2026},
+  eprint        = {2610.41661},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2610.41661},
+}</pre></div>
+          </div>
+        </li>
 
         <li class="pub-item fade-in">
           <div><span class="pub-venue-badge">ACL 2026</span></div>
@@ -210,10 +240,10 @@
 </main>
 
 <footer>
-  Last updated: June 2026.
+  Last updated: November 2026.
 </footer>
 
 <script src="content/about.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=2"></script>
 </body>
 </html>

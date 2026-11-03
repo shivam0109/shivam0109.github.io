@@ -48,9 +48,15 @@ function toggleMenu() {
 function toggleEl(btn, type) {
   var item = btn.closest('.pub-item');
   if (!item) return;
-  var cls = type === 'abs' ? 'pub-abstract' : 'pub-bibtex';
-  var el  = item.querySelector('.' + cls);
-  if (el) el.classList.toggle('open');
+  var targetClass = type === 'abs' ? 'pub-abstract' : 'pub-bibtex';
+  var panels = item.querySelectorAll('.pub-abstract, .pub-bibtex');
+  panels.forEach(function (panel) {
+    if (panel.classList.contains(targetClass)) {
+      panel.classList.toggle('open');
+    } else {
+      panel.classList.remove('open');
+    }
+  });
 }
 
 
